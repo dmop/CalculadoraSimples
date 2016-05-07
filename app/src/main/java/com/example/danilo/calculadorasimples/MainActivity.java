@@ -1,7 +1,5 @@
 package com.example.danilo.calculadorasimples;
 
-import android.app.Dialog;
-import android.content.SyncStatusObserver;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,13 +14,11 @@ public class MainActivity extends AppCompatActivity {
     EditText num2;
     TextView resultado;
 
-    /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // find the elements
         num1 = (EditText) findViewById(R.id.num1);
         num2 = (EditText) findViewById(R.id.num2);
 
