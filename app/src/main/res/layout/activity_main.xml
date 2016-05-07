@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1"
+    >
+
+
+    <TextView
+        android:textColor="#3F51B5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insira os valores"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.04"
+        style="bold"
+        android:textSize="36sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:layout_marginLeft="10pt"
+        android:layout_marginRight="10pt"
+        android:layout_marginTop="3pt">
+        <EditText
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5pt"
+            android:id="@+id/num1"
+            android:layout_width="match_parent"
+            android:inputType="numberDecimal">
+        </EditText>
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5pt"
+            android:id="@+id/num2"
+            android:layout_width="match_parent"
+            android:inputType="numberDecimal">
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:layout_marginTop="3pt"
+        android:layout_marginLeft="5pt"
+        android:layout_marginRight="5pt">
+        <Button
+            android:backgroundTint="#448AFF"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="+"
+            android:textSize="8pt"
+            android:id="@+id/btnAdd"
+            android:onClick="som"
+            android:shadowColor="#9E9E9E">
+        </Button>
+        <Button
+            android:backgroundTint="#448AFF"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="-"
+            android:textSize="8pt"
+            android:id="@+id/btnSub"
+            android:onClick="sub">
+        </Button>
+        <Button
+            android:backgroundTint="#448AFF"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="*"
+            android:textSize="8pt"
+            android:id="@+id/btnMult"
+            android:onClick="mult">
+        </Button>
+
+        <Button
+            android:backgroundTint="#448AFF"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="/"
+            android:textSize="8pt"
+            android:id="@+id/btnDiv"
+            android:onClick="div">
+        </Button>
+        <Button
+            android:backgroundTint="#F44336"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:textSize="8pt"
+            android:text="CE"
+            android:id="@+id/ce"
+            android:onClick="ce"
+            android:layout_gravity="" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5pt"
+        android:layout_marginRight="5pt"
+        android:textSize="12pt"
+        android:layout_marginTop="3pt"
+        android:id="@+id/resultado"
+        android:gravity="center_horizontal">
+    </TextView>
+
+</LinearLayout>
